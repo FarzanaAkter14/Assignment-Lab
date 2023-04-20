@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html " class="logo">Food Order Ease</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="food.html">Order Food</a>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a class="active" href="login.html">Login</a></li>
+          <li>
+            <a href="reg.html">Registration</a>
+          </li>
+          <li>
+            <a href="notice.html"
+              >Other
+              <i class="fas fa-caret-down"></i>
+            </a>
+            <ul>
+              <li><a href="notice.html">Notice</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <section class="foodcontent">
+        <div class="box">
+          <h1>Order Food</h1>
+          <div class="formcontainer">
+            <form
+              id="loginForm"
+              class="form"
+              onsubmit="return logValidate();"
+              action="index.html"
+            >
+              <label for="food">Choose a Food Item:</label>
+              <select name="foods">
+                <option value="">Please choose a Food Item</option>
+                <option value="burger">Burger</option>
+                <option value="sandwich">Sandwich</option>
+                <option value="fries">Fries</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="pizza">Pizza</option>
+                <option value="Tacos">Tacos</option>
+              </select>
+              <label for="quantity">Quantity:</label>
+              <select name="quantity">
+                <option value="">Please Select the Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">5</option>
+              </select>
+
+              <button class="btnWhite" type="submit">ORDER</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2023 Farzana Akter Mim</p>
+    </footer>
+  </body>
+</html>
