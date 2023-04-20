@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  background-color: #0072b4;
+}
+
+nav .logo {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2.5em;
+  padding-left: 48px;
+}
+nav {
+  height: 75px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+}
+nav ul {
+  float: right;
+  margin-right: 80px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  padding: 0 50px;
+  line-height: 4.35em;
+  font-size: 18px;
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #282828;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 0 50px 0 0;
+}
+
+.sidebar {
+  width: 200px;
+  font-size: 20px;
+  padding: 5px;
+  padding-top: 40px;
+  background-color: white;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.sidebar ul li a {
+  font-weight: bold;
+  color: #282828;
+  display: block;
+  padding: 0 40px;
+  transition: 0.5s;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: #0072b4;
+}
+
+.sidebar ul ul {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s linear;
+}
+.sidebar ul ul li {
+  margin-top: 10px;
+  display: list-item;
+  position: relative;
+}
+
+.hero {
+  box-sizing: border-box;
+  padding: 50px 100px;
+  padding-right: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left h1 {
+  color: #ffffff;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.btnblack {
+  background-color: #282828;
+  color: #ffffff;
+  border: 2px solid #282828;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btnblack:hover {
+  background-color: #0072b4;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btnnobg {
+  background-color: #0072b4;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btnnobg:hover {
+  background-color: #282828;
+  color: #ffffff;
+  border: 2px solid #282828;
+}
+
+.right img {
+  width: 70%;
+}
+
+.content {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.line {
+  width: 80%;
+  margin: 20px auto;
+  border-bottom: 2px solid #282828;
+}
+
+.abtimg {
+  background-image: url(../img/food.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.abtimg h2 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.abtimg h3 {
+  font-size: 40px;
+}
+
+.abtimg button {
+  background-color: #ffffff;
+  color: #282828;
+  border: 2px solid #ffffff;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #282828;
+  padding: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.abtcontent {
+  color: #ffffff;
+  height: 80.8vh;
+  text-align: justify;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logcontent {
+  color: #ffffff;
+  height: 80.8vh;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.box {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formcontainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formcontainer form input {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 400px;
+}
+
+.formcontainer form button {
+  width: 150px;
+  padding: 10px 20px;
+  margin: auto;
+  background-color: #0072b4;
+  border: solid 2px #ffffff;
+  color: #282828;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.formcontainer form button:hover {
+  background-color: #ffffff;
+}
+
+.link-txt a {
+  color: white;
+  font-weight: bold;
+}
+
+.noticecontainer {
+  text-align: center;
+  color: #ffffff;
+  height: 80.8vh;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.noticecontainer h2 {
+  margin: 20px 0;
+}
+
+.noticeboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticeboard a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.foodcontent {
+  color: #ffffff;
+  height: 80.8vh;
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+.foodcontent select {
+  font-size: 16px;
+  padding: 10px 20px;
+}
